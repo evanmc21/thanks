@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A bright, enthusiastic web developer">
+    <meta name="keywords" content="web developer, bright web developer, enthusiastic web developer, beyonce">
+    <meta name="author" content="Evan Candler">
+    <meta http-equiv="X-UA-Compatitable" content="ie-edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400" rel="stylesheet">
+    <title>Thanks, iMedia</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">Thank you,</span> iMedia</h1>
+        </div>
+      </div>
+    </header>
+<section id="showcase">
+  <div class="container">
+    <h2>A Bright, Enthusiastic Web Developer</h2>
+    <p>Keep reading to discover a few great reasons why Evan Candler would make a great addition to the team!</p>
+  </div>
+</section>
+
+<section id="featured" class="transition">
+  <div class="container">
+    <h1>Evan & iMedia</h1>
+        <button id="button">(it has a nice ring to it, doesn't it?)</button>
+  </div>
+</section>
+
+<section id="boxes">
+  <div class="container grid-3 center">
+    <div>
+      <img src="logo_think.png">
+      <h3>Thinker</h3>
+      <p>He thinks critically and diligently to quickly solve problems</p>
+    </div>
+    <div>
+      <img src="logo_brush.png">
+      <h3>Creator</h3>
+      <p>Creates value for clients and his team through effective communication and writing clear, concise code</p>
+    </div>
+    <div>
+      <img src="logo_code.png">
+      <h3>Builder</h3>
+      <p>He's passionate about building web applications and fostering lasting relationships with clients and coworkers </p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p> Let's Make Magic <small>Copyright &copy; 2018</small></p>
+</footer>
+  </body>
+  <script>
+    $('#button').on('click', () => {
+      const boxes = $('#boxes').position().top;
+
+      $('html, body').animate({
+        scrollTop: boxes
+      }, 900);
+    });
+  </script>
+</html>
